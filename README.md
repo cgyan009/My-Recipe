@@ -1,16 +1,24 @@
 # my_recipe
 
-A new Flutter project.
+The app will recreate the old urbanspoon app to help users pick a restaurant.
 
-## Getting Started
+### Part 1
 
-This project is a starting point for a Flutter application.
+At the top of the screen there should be a text field to allow users to entire their location or use Location Services to get that information automatically.
 
-A few resources to get you started if this is your first Flutter project:
+### Part 2
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![screen design](urban_spoon.jpg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Underneath, there should be two slot machine like spinners filled with data from the Zomato api. The two columns should be
+
+* Cuisine
+* Price
+
+Users should be able to loop through these three columns and lock any or all of them.
+
+Below the slot machine there will be a spin button that will rotate any of the unlocked columns.  After the columns are done spinning, the app will query Zomato to get a list of Restaurants.
+
+### Part 3
+
+This restaurant list is then pushed to a new screen where users can scroll through the list an selected their favourite restaurants.
